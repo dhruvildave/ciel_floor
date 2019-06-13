@@ -1,10 +1,9 @@
 
-#include "ciel_floor.h"
+#include "pch.h"
 #include <ctype.h>
-#include <stdio.h>
 
 int read_num(char s[], int lim) {
-    int i, c;
+    int i = 0, c = 0;
 
     for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i) {
         if (isdigit(c) || c == '.' || c == '-') {
@@ -33,7 +32,7 @@ int check_sign(const char str[]) {
 long write_num(char s[]) {
     long num = 0;
     int sign = check_sign(s);
-    int i;
+    int i = 0;
 
     if (sign == -1) {
         i = 1;
@@ -59,7 +58,7 @@ long write_num(char s[]) {
 }
 
 int is_integer(const char s[]) {
-    int i;
+    int i = 0;
 
     for (i = 0; s[i] != '\0'; ++i) {
         if (s[i] == '.') {

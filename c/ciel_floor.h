@@ -1,6 +1,6 @@
 
 #if !defined(CIEL_FLOOR_H)
-#define CIEL_FLOOR_H
+#define CIEL_FLOOR_H 1
 
 long floor_func(char[]);
 long ciel_func(char[]);
