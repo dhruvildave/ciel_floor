@@ -1,5 +1,5 @@
 
-CC = clang
+CC = gcc
 
 ciel_floor.out : main.o ciel.o floor.o read_write.o
 	time $(CC) *.o -o ciel_floor.out
